@@ -187,10 +187,6 @@ export default {
       console.log("loadWebPlayer!");
       const webPlayerComp = event.object;
 
-      setTimeout(() => {
-        webPlayerComp.registerLocalResource("test.html", `~/assets/test.html`);
-      }, 1000);
-
       // load sounds
       this.sounds.forEach((sound) => {
         webPlayerComp.registerLocalResource(
