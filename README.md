@@ -3,6 +3,11 @@
 A NativeScript-Vue demo app that plays a sound sequence with 4 tracks, using Web Audio APIs.
 The sequence is played from a webview, but overall controlled in NativeScript.
 
+## Demo
+
+[![{N}-Vue and Web Audio APIs demo app
+](https://i.ytimg.com/vi/ue5gIMBBdnA/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD5MOFLzOO1a3Obcnqej7Y9IQZP5A)](https://www.youtube.com/watch?v=ue5gIMBBdnA)
+
 ## Getting started
 
 ### Prerequisites
@@ -23,6 +28,7 @@ The sequence is played from a webview, but overall controlled in NativeScript.
 
 ```bash
 git clone https://github.com/tralves/WallStreetJam
+cd WallStreetJam
 ```
 
 2. Run the app:
