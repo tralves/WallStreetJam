@@ -120,7 +120,7 @@ export default {
   methods: {
     playerStarted() {
       this.state = "playing";
-      this.graphIntervalId = setInterval(this.updateGraph, 100);
+      this.graphIntervalId = setInterval(this.updateGraph, 50);
     },
     playerStopped() {
       this.state = "stopped";
