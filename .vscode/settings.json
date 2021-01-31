@@ -1,0 +1,6 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "prettier.printWidth": 120,
+    "editor.wordWrapColumn": 120
+}

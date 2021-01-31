@@ -1,0 +1,41 @@
+// // Accent
+// $accent: #fe4a49;
+
+// // Complementary
+// $complementary: const(ruby);
+// // $complementary-color: #f6a21d;
+
+// // Buttons
+// // $btn-color-inverse: const(charcoal);
+
+// // Core variables
+// @import "~@nativescript/theme/index";
+
+/* Colors */
+$accent:  #fe4a49;
+
+/* This color was named $ab-background in Theme v1 */
+$complementary: #f6a21d;
+
+/* The variables are loaded before the Core styles */
+@import '~@nativescript/theme/index';
+
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+// Font icon class
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+    font-weight: 400;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}

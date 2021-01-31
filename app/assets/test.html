@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="rand"></p>
+    <br />
+    <button onclick="playStop()">play</button>
+    <button onclick="getFreqGraph()">graph</button>
+    <p id="graph"></p>
+    <script type="text/javascript" src="./webPlayer.js"></script>
+    <script type="text/javascript" src="./sequences/seq1.js"></script>
+    <script type="text/javascript">
+      document.getElementById("rand").innerHTML = parseInt(
+        Math.random() * 1000
+      );
+
+      setVoiceBuffers([
+        {
+          name: "1017",
+          filepath: "./sounds/1017.mp3"
+        },
+        {
+          name: "1045",
+          filepath: "./sounds/1045.mp3"
+        },
+        {
+          name: "1086",
+          filepath: "./sounds/1086.mp3"
+        },
+        {
+          name: "whiteNoise1Min",
+          filepath: "./sounds/whiteNoise1Min.mp3",
+          filters: ["gain"]
+        }
+      ]);
+
+      function getFreqGraph() {
+        const data = getFreqData();
+        document.getElementById("graph").innerHTML = JSON.stringify(data);
+      }
+    </script>
+  </body>
+</html>
